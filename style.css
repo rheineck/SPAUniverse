@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --tt-color: #fff;
+    --ff-text: 'Roboto', sans-serif;
+    background-color: #323238;
+}
+
+body {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home {
+    background-image: url("images/mountains-universe-1.png");
+}
+
+.universe {
+    background-image: url("images/mountains-universe02.png");
+}
+
+.exploration {
+    background-image: url("images/mountains-universe-3.png");
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    padding: 4rem 4rem 4rem 7.2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--tt-color);
+    font-family: var(--ff-text);
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin: 4rem;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+main {
+    font-family: var(--ff-text);
+}
+
+button {
+    background: none;
+    color: var(--tt-color);
+    border: 2px solid var(--tt-color);
+    border-radius: 5px;
+    height: 4.8rem;
+    width: 19.5rem;
+}
+
+button:hover {
+    background: #fff;
+    color: hsla(194, 97%, 31%, 1);
+}
+
+button a {
+    text-decoration: none;
+    color: var(--tt-color);
+}
+
+button a:hover {
+    color: hsla(194, 97%, 31%, 1);
+}
+
+h1 {
+    font-family: var(--ff-text);
+    color: var(--tt-color);
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%;
+    /* margin-bottom: 2.4rem; */
+}
+
+p {
+    font-family: var(--ff-text);
+    color: var(--tt-color);
+}
+
+.homeContent {
+    padding: 29.4rem 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeContent h1, .universeContent h1, .explorationContent h1 {
+    margin-bottom: 2.5rem;
+}
+
+.homeContent span {
+    /* padding: 12px 32px; */
+    font-family: var(--ff-text);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.universeContent, .explorationContent {
+    margin-top: 6.3rem;
+    margin-left: 10.2rem;
+}
+
+.universeContent p, .explorationContent p {
+    font-size: 1.8rem;
+    line-height: 160%;
+    height: 20rem;
+    width: 65rem;
+}
+
+.active {
+    font-weight: bold;
+}
